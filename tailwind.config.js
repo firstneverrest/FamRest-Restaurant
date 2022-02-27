@@ -9,11 +9,7 @@ module.exports = {
         warning: '#FF9800',
         info: '#2196F3',
         success: '#4CAF50',
-        'cu-light-pink': {
-          300: '#ff9eb0',
-          400: '#DD919F',
-          700: '#D46C86',
-        },
+        'grid-color': '#FF0000',
       },
       letterSpacing: {
         wide: '0.15em',
