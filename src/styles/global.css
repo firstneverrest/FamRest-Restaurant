@@ -9,7 +9,7 @@
 html,
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 62.5% !important;
+  font-size: 16px !important;
 }
 
 h1,
@@ -22,15 +22,16 @@ h6 {
 }
 
 h1 {
-  font-size: 3.6rem !important;
+  font-size: 3.4rem !important;
 }
 
 h2 {
-  font-size: 3.2rem !important;
+  font-size: 3rem !important;
 }
 
 h3 {
-  font-size: 2.8rem !important;
+  font-size: 2.6rem !important;
+  font-weight: 600 !important;
 }
 
 h4 {
@@ -67,9 +68,23 @@ h6 {
   }
 } */
 
+.navbar-container {
+  display: flex;
+}
+
+.navbar-container a:not(:last-child) {
+  margin-right: 64px;
+  cursor: pointer;
+}
+
+.navbar-container a:hover {
+  color: #ff0000;
+  transition: color 0.3s ease-in-out;
+}
+
 @layer components {
   .nav-text {
-    @apply text-primary tracking-wide text-lg uppercase;
+    @apply text-primary tracking-wide font-semibold uppercase;
   }
 }
 
