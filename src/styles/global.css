@@ -70,6 +70,8 @@ h6 {
 
 .navbar-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-container a:not(:last-child) {
