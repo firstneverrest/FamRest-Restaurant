@@ -1,5 +1,5 @@
 import { h, FunctionComponent } from 'preact';
-import { Navbar, BannerCard, SearchBar } from '../components';
+import { Navbar, BannerCard, SearchBar, Greeting } from '../components';
 import Banner from '../assets/images/banner.jpg';
 
 const Homepage: FunctionComponent = () => {
@@ -26,6 +26,7 @@ const Homepage: FunctionComponent = () => {
         />
         <BannerCard />
       </div>
+      <Greeting />
     </div>
   );
 };

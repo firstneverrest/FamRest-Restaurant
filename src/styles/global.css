@@ -50,6 +50,14 @@ h6 {
   font-family: 'Dancing Script', cursive;
 }
 
+.font-garamond {
+  font-family: 'EB Garamond', serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
 .container {
   position: relative;
   grid-template-columns: repeat(12, 1fr);
@@ -78,19 +86,22 @@ h6 {
   align-items: center;
 }
 
-.navbar-container a:not(:last-child) {
-  margin-right: 64px;
+.navbar-container a {
   cursor: pointer;
 }
 
+.navbar-container a:not(:last-child) {
+  margin-right: 64px;
+}
+
 .navbar-container a:hover {
-  color: #ff0000;
-  transition: color 0.3s ease-in-out;
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
 }
 
 @layer components {
   .nav-text {
-    @apply text-primary tracking-wide font-semibold uppercase;
+    @apply text-primary text-sm tracking-wide font-semibold uppercase;
   }
 }
 
