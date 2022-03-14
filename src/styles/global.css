@@ -75,11 +75,39 @@ h6 {
   opacity: 10%;
 }
 
-/* @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     margin: 54px 0;
   }
-} */
+
+  body {
+    font-size: 14px !important;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 2.6rem !important;
+  }
+
+  h3 {
+    font-size: 2rem !important;
+  }
+
+  h4 {
+    font-size: 1.6rem !important;
+  }
+
+  h5 {
+    font-size: 1.2rem !important;
+  }
+
+  h6 {
+    font-size: 1rem !important;
+  }
+}
 
 .navbar-container {
   display: flex;
@@ -102,7 +130,7 @@ h6 {
 
 @layer components {
   .nav-text {
-    @apply text-primary text-sm tracking-wide font-semibold uppercase;
+    @apply text-primary text-sm lg:text-xs tracking-wide font-semibold uppercase;
   }
 }
 

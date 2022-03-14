@@ -11,7 +11,7 @@ const SearchBar: FunctionComponent = () => {
     <div class="flex">
       <input
         type="text"
-        class="w-[200px] border-b-[1px] border-black outline-none"
+        class="w-[200px] lg:w-[150px] border-b-[1px] border-black outline-none"
         placeholder="Search"
         value={search}
         onChange={handleChange}
