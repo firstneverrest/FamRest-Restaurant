@@ -19,7 +19,7 @@ const MenuCard: FunctionComponent<MenuCardProps> = ({
       <p class="text-primary font-garamond font-medium uppercase tracking-widest">
         {type}
       </p>
-      <h4 class="capitalize">{title}</h4>
+      <h4>{title}</h4>
       <p class="my-4">{description}</p>
       <hr class="w-full h-1" />
     </div>
