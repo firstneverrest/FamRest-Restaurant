@@ -10,6 +10,12 @@ module.exports = {
         info: '#2196F3',
         success: '#4CAF50',
         'grid-color': '#FF0000',
+        'light-grey': '#F8F7FA',
+        grey: '#CBCBD4',
+        'dark-grey': '#A6A6AA',
+      },
+      gridAutoRows: {
+        card: 'minmax(min-content, max-content)',
       },
       letterSpacing: {
         wide: '0.15em',

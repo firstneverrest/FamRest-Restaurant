@@ -58,7 +58,7 @@ const Homepage: FunctionComponent = () => {
       </section>
 
       <section class="mb-20">
-        <h4 class="font-garamond italic">Try our new recipes</h4>
+        <h4 class="font-garamond italic text-primary">Try our new recipes</h4>
         <div class="grid grid-cols-2 gap-8">
           <MenuCard
             title="Strawberry pie & vanilla milk"
@@ -66,6 +66,9 @@ const Homepage: FunctionComponent = () => {
               reiciendis ad officiis doloremque quis veniam ab quo odio animi
               eligendi."
             type="desserts"
+            size="large"
+            rate={4}
+            price={7.0}
             image="https://images.unsplash.com/photo-1593424718424-cf4d83f3def1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
           />
           <MenuCard
@@ -74,7 +77,54 @@ const Homepage: FunctionComponent = () => {
           reiciendis ad officiis doloremque quis veniam ab quo odio animi
           eligendi."
             type="desserts"
+            size="large"
+            rate={5}
+            price={6.5}
             image="https://images.unsplash.com/photo-1508737804141-4c3b688e2546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          />
+        </div>
+      </section>
+
+      <section class="mb-20">
+        <h4 class="font-garamond italic text-primary">
+          Explore delicious recipes
+        </h4>
+        <div class="grid grid-cols-4 lg:grid-cols-2 gap-8">
+          <MenuCard
+            title="Brownie chocolate on top"
+            description=""
+            type="desserts"
+            size="small"
+            rate={5}
+            price={4.5}
+            image="https://media.istockphoto.com/photos/piece-of-sachertorte-sachr-cake-on-white-plate-top-view-copy-space-picture-id1296474411?b=1&k=20&m=1296474411&s=170667a&w=0&h=KwzSC3hrY3ZE07GJ3P08E5WZO72eHqqe7XKxUmX8Pk4="
+          />
+          <MenuCard
+            title="Oreo chocolate ice cream"
+            description=""
+            type="desserts"
+            size="small"
+            rate={5}
+            price={4.7}
+            image="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          />
+          <MenuCard
+            title="Ferrero cupcake"
+            description=""
+            type="desserts"
+            size="small"
+            rate={5}
+            price={3.65}
+            image="https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+          />
+          <MenuCard
+            title="Chocolate & vanilla pancake"
+            description=""
+            type="desserts"
+            size="small"
+            rate={5}
+            price={5.5}
+            image="https://images.unsplash.com/photo-1565004602745-718e1b0d44f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
           />
         </div>
       </section>
