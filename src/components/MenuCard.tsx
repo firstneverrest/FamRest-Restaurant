@@ -56,7 +56,9 @@ const MenuCard: FunctionComponent<MenuCardProps> = ({
       <div class="flex justify-between">
         <div class="flex">
           {stars.map((star, index) => (
-            <span key={index}>{star}</span>
+            <span class="opacity-80" key={index}>
+              {star}
+            </span>
           ))}
         </div>
         <div class="flex text-primary font-medium text-base">

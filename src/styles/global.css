@@ -128,6 +128,15 @@ h6 {
   transition: all 0.2s ease-in-out;
 }
 
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+
 @layer components {
   .nav-text {
     @apply text-primary text-sm lg:text-xs tracking-wide font-semibold uppercase;

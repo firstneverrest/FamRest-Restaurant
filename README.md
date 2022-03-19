@@ -20,3 +20,7 @@ npm install -D tailwindcss postcss autoprefixer
 
 
 ```
+
+## Inspiration
+
+https://braise.qodeinteractive.com/recipe-blog/

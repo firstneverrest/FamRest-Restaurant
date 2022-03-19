@@ -1,9 +1,21 @@
 import { h, FunctionComponent } from 'preact';
-import { Navbar, BannerCard, SearchBar, MenuCard } from '../components';
+import {
+  Navbar,
+  BannerCard,
+  SearchBar,
+  MenuCard,
+  Carousel,
+} from '../components';
 import Banner from '../assets/images/banner.jpg';
 import Cake from '../assets/images/cake-strawberry.jpg';
 
 const Homepage: FunctionComponent = () => {
+  const images = [
+    'https://media.istockphoto.com/photos/piece-of-sachertorte-sachr-cake-on-white-plate-top-view-copy-space-picture-id1296474411?b=1&k=20&m=1296474411&s=170667a&w=0&h=KwzSC3hrY3ZE07GJ3P08E5WZO72eHqqe7XKxUmX8Pk4=',
+    'https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1603532648955-039310d9ed75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1565004602745-718e1b0d44f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
+  ];
   return (
     <div class="flex flex-col mx-14">
       <header class="grid grid-cols-3 items-center">
@@ -127,6 +139,10 @@ const Homepage: FunctionComponent = () => {
             image="https://images.unsplash.com/photo-1565004602745-718e1b0d44f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fGRlc3NlcnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
           />
         </div>
+      </section>
+
+      <section class="mb-20">
+        <Carousel images={images} />
       </section>
     </div>
   );
