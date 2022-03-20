@@ -1,18 +1,30 @@
 import { h, FunctionComponent } from 'preact';
 import Slider from 'react-slick';
+import { ArrowLeft, ArrowRight } from '../components/arrow';
 
 interface CarouselProps {
   images: string[];
 }
+
+const NextArrow = (props: any) => {
+  return <ArrowRight {...props} />;
+};
+
+const PrevArrow = (props: any) => {
+  return <ArrowLeft {...props} />;
+};
 
 const Carousel: FunctionComponent<CarouselProps> = ({ images }) => {
   const settings = {
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
     pauseOnHover: true,
+    dots: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
     responsive: [
       {
         breakpoint: 768,
