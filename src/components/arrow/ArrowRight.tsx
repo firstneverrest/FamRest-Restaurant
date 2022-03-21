@@ -1,18 +1,8 @@
 import { h, FunctionComponent } from 'preact';
 
-interface ArrowRightProps {
-  className: string;
-  style: any;
-  onClick: () => void;
-}
-
-const ArrowRight: FunctionComponent<ArrowRightProps> = ({
-  className,
-  style,
-  onClick,
-}) => {
+const ArrowRight: FunctionComponent = (props) => {
   return (
-    <button class={className} style={style} onClick={onClick}>
+    <button {...props}>
       <span className="next-arrow">
         <svg
           width="32"
