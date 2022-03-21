@@ -13,6 +13,7 @@ module.exports = {
         'light-grey': '#F8F7FA',
         grey: '#CBCBD4',
         'dark-grey': '#A6A6AA',
+        'primary-light': '#faf2f0',
       },
       gridAutoRows: {
         card: 'minmax(min-content, max-content)',
