@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "preact": "^10.5.15",
+    "preact-router": "^4.0.1",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1"
   },
