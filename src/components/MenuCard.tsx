@@ -51,8 +51,12 @@ const MenuCard: FunctionComponent<MenuCardProps> = ({
         {type}
       </p>
       <h4>{title}</h4>
-      <p class="my-4">{description}</p>
-      <hr class="w-full h-1" />
+      {description ? (
+        <p class="my-4">{description}</p>
+      ) : (
+        <div class="mb-1"></div>
+      )}
+      <hr class="w-full h-1 mb-1" />
       <div class="flex justify-between">
         <div class="flex">
           {stars.map((star, index) => (
