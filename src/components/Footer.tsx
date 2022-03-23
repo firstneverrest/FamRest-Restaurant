@@ -2,7 +2,7 @@ import { h, FunctionComponent } from 'preact';
 
 const Footer: FunctionComponent = () => {
   return (
-    <footer class="flex flex-col bg-primary-light h-[500px] w-full absolute bottom-0">
+    <footer class="flex flex-col bg-primary-light h-[500px] w-full">
       <div class="flex flex-col justify-center items-center h-5/6">
         <h3 class="font-semibold italic">FamRest</h3>
         <p class="nav-text mb-4">Family Cooking Restaurant</p>
