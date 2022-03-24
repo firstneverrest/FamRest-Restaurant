@@ -44,7 +44,7 @@ const MenuCard: FunctionComponent<MenuCardProps> = ({
     <div class="flex flex-col">
       <img
         src={image}
-        class={`${cardWidth} my-4 object-cover`}
+        class={`${cardWidth} my-4 object-cover lg:h-[400px]`}
         alt="our foods"
       />
       <p class="text-primary font-garamond font-medium uppercase tracking-widest">

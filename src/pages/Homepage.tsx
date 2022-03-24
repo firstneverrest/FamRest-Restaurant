@@ -23,21 +23,28 @@ const Homepage: FunctionComponent = () => {
   return (
     <div class="relative min-h-[100vh]">
       <div class="container">
-        <div class="flex flex-col mx-14">
-          <header class="grid grid-cols-3 items-center">
-            <p>Favorite</p>
+        <div class="flex flex-col mx-14 sm:mx-8">
+          <header class="grid grid-cols-3 lg:grid-cols-none lg:flex lg:flex-col items-center">
+            <p class="lg:hidden">Favorite</p>
             <div class="text-center">
               <Link href="/">
                 <h1 class="font-semibold italic">FamRest</h1>
                 <p class="nav-text">Family Cooking Restaurant</p>
               </Link>
             </div>
-            <span class="justify-self-end">
+            <span class="justify-self-end lg:hidden">
               <SearchBar />
             </span>
+
+            <div class="hidden justify-between items-center w-full lg:flex lg:mt-8">
+              <p class="">Favorite</p>
+              <span class="justify-self-end">
+                <SearchBar />
+              </span>
+            </div>
           </header>
 
-          <span class="h-px w-full bg-gray-200 mt-16 mb-[24px]"></span>
+          <span class="h-px w-full bg-gray-200 mt-16 lg:mt-4 mb-[24px]"></span>
           <Navbar />
           <div class="relative w-full">
             <img
@@ -45,7 +52,9 @@ const Homepage: FunctionComponent = () => {
               src={Banner}
               alt="breakfast"
             />
-            <BannerCard />
+            <div class="sm:hidden">
+              <BannerCard />
+            </div>
           </div>
 
           <section class="grid gap-x-6 gap-y-20 grid-cols-12 my-20">
@@ -83,7 +92,7 @@ const Homepage: FunctionComponent = () => {
             <h4 class="font-garamond italic text-primary">
               Try our new recipes
             </h4>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-2 sm:grid-cols-1 gap-8">
               <MenuCard
                 title="Strawberry pie & vanilla milk"
                 description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -113,7 +122,7 @@ const Homepage: FunctionComponent = () => {
             <h4 class="font-garamond italic text-primary">
               Explore delicious recipes
             </h4>
-            <div class="grid grid-cols-4 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-4 lg:grid-cols-2 sm:grid-cols-1 gap-8">
               <MenuCard
                 title="Brownie chocolate on top"
                 description=""
@@ -153,7 +162,7 @@ const Homepage: FunctionComponent = () => {
             </div>
           </section>
 
-          <section class="mb-[600px]">
+          <section class="mb-16">
             <Carousel images={images} />
           </section>
         </div>
